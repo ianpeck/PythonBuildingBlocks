@@ -24,5 +24,7 @@ for player, jersey_number in bears_dict.items():
 for player, jersey_number in list(bears_dict.items()):
     if jersey_number > 50:
         del bears_dict[player]
+    # you need to use list() so it doesn't iterate over the dict while you're removing items
+    # instead it iterates over a seperate list
 
 
