@@ -21,3 +21,12 @@ if 'David Montgomery' in bears_dict:
     print('He is in')
 else:
     print('He is not in')
+
+# CREATING a dictionary from TWO LISTS
+bears_recievers_names = ['Darnell Mooney', 'Allen Robinson', 'Damiere Byrd', 'Marquise Goodwin', 'Dazz Newsome', 'Jakeem Grant']
+bears_recievers_numbers = [11,12,10,84,83,17]
+bears_recievers_dict = dict(zip(bears_recievers_names,bears_recievers_numbers)) # zip() creates a list of tuples
+
+# CREATING a dictionary from a LIST OF TUPLES
+bears_running_backs_list = [('David Montgomery', 32),('Tarik Cohen', 29),('Khalil Herbert', 24),('Damien Williams', 8)]
+bears_running_backs_dict = dict(bears_running_backs_list) # very simple, just use dict() on a list of tuples
