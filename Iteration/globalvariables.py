@@ -1,7 +1,6 @@
 my_dict = {'monkey': 1 , 'ape': 2, 'cat' : 3, 'dog' : 4}
 
 def change_dict():
-    global my_dict
     list_of_primates = ['ape', 'monkey', 'orang']
     for k in my_dict.keys():
         if k in list_of_primates:

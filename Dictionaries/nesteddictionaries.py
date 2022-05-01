@@ -75,19 +75,15 @@ def user_stats(dict):
 
 find_summed_info(stream_dict)
 
-print(number_of_sessions)
-
-print(total_session_time)
-
-print(avg_session_time)
-
 total_dict['avg_session_time'] = avg_session_time
 total_dict['number_of_sessions'] = number_of_sessions
 total_dict['total_session_time'] = total_session_time
 
-print(total_dict)
+print('total dict: ',total_dict)
 
 create_nested_dict(stream_dict)
+
+print(user_dict)
 
 user_stats(stream_dict)
 
