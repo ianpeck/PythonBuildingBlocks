@@ -9,7 +9,7 @@ def pick_random_item():
 @dataclass
 class Tarnished:
     name: str
-    #init=False means you can not initlialize your own item, it must be chosen from the random list
+    #init=False means you can not initlialize your own item, it must be chosen from the random list using the function
     left_hand: str = field(init=False,default_factory=pick_random_item)
     right_hand: str =field(init=False,default_factory=pick_random_item)
 
